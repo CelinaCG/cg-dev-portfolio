@@ -1,0 +1,149 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Celine CHEUNG Portfolio - Accueil {% endblock %}
+
+{% block body %}
+
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5 article center_image">
+      <div class="col-10 col-sm-8 col-lg-6 ">
+        <img class ="d-block mx-lg-auto img-fluid rounded im-homepage" src="{{ asset("assets/images/poste-travail.jpg")}}" alt="image de poste de travail">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-sm mb-3">Bonjour ! Je suis Céline, Développeur web et mobile junior</h1>
+        <p class="lead">Récemment diplomée d'un titre RNCP 5 de développeur intégrateur web spécialisé WordPress basé sur la conception de projets et pratiquant les bases de Symfony 4.4 à la suite d'une ancienne formation en ligne. 
+        <br>Compréhension et adaptation aux besoins du client, conception de projets de sites internet et curieuse envers les nouveaux défis et innovations liés au monde du web. 
+        <br>
+        En dehors du travail, j'apprécie la lecture, la musique et les jeux-vidéos.
+        <br>
+        N'hésitez pas à me contacter pour en savoir plus sur mes services ou pour discuter de votre prochain projet de développement web.
+        </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start margin-button">
+          <button type="button" class="btn button-show margin-button btn-lg px-4 me-md-2">Voir mes compétences</button>
+          <button type="button" class="btn button-show margin-button btn-lg px-4">Me contacter</button>
+        </div>
+      </div>
+    </div>
+
+  {# <hr class="rubrique-trait"> #}
+
+  {# <div>
+  <p>Après avoir vécu plusieurs vies professionnelles dans le milieu de l'édition et de l'assurance/mutualité, j'ai décidé de me reconvertir dans l'informatique en tant que Développeur Web/Mobile (Symfony) ou WordPress. </p>
+  </div> #}
+
+  <div class="skill-exp">
+    <div class="skill-exp-gap">
+      <h2>Compétences</h2>
+
+        {# <p>Compétence 1</p>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar" style="width: 0%">0%</div>
+        </div>
+          <p>Compétence 2</p>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar" style="width: 25%">25%</div>
+        </div>
+          <p>Compétence 3</p>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar" style="width: 50%">50%</div>
+        </div>
+          <p>Compétence 4</p>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar" style="width: 75%">75%</div>
+        </div>
+          <p>Compétence 5</p>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar" style="width: 100%">100%</div>
+        </div> #}
+
+
+        
+      <ul class="skill-index">
+        <li>Conception de projets de sites internet ou d'applications mobile selon une maquette</li>
+        <li>Développement de projets avec cahier des charges</li>
+        <li>Analyse des besoins clients et proposition de solutions techniques</li>
+      </ul>
+      <p>En savoir plus sur mes compétences spécifiques:</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start margin-button">
+        <button type="button" class="btn button-show margin-button btn-lg px-4 me-md-2">Compétences Symfony</button>
+        <button type="button" class="btn button-show margin-button btn-lg px-4">Compétences WordPress</button>
+      </div>
+
+    </div>
+
+
+    <div class="skill-exp-gap">
+      <h2>Dernière expérience</h2>
+      <div class="exp-col">
+        {# colonne 1 #}
+        <div class="date-exp">
+          {# <div> #}
+            <h6>2020</h6>
+          {# </div> #}
+          <div class="arrow-align">
+            <div class="border-bottom border-dark my-3"></div>
+            <div><i class="bi bi-arrow-right-circle-fill"></i></div>
+          </div>
+       
+          <p>Cocon de bien-être</p>
+        </div>
+        {# colonne 2 #}
+        <div>
+          <h4>Développeur WordPress</h4>
+          <p>J'ai aidé à la conception d'un site WordPress pour une gérante d'un salon bien-être lors d'un stage de 25 jours. Le site est accessible à l'adresse suivante : <a href="https://www.cocondebienetre.fr/" class="home-url">Cocon de bien-être</a></p>
+          <div class="d-grid gap-2 d-md-flex margin-button">
+          <button type="button" class="btn btn-lg button-show margin-button">Voir mon parcours<i class="bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h2>Derniers projets</h2>
+    {# <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    {# card 2 #}
+    {# <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div> #}
+
+    {# overlay #}
+    <div class="portfolio-container skill-exp">
+      <div class="cont-overlay">
+        <div class="portfolio-flex">
+          <img src="{{ asset("assets/images/nathalie_mota.jpg")}}" alt="Avatar" class="image">
+          <div class="overlay">
+            <div class="text">Nathalie Mota Photographie</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cont-overlay">
+        <div class="portfolio-flex">
+          <img src="{{ asset("assets/images/biblio-atlantide.jpg")}}" alt="Avatar" class="image">
+          <div class="overlay">
+            <div class="text">Bibliothèque Atlantide</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</div>
+
+{% endblock %}

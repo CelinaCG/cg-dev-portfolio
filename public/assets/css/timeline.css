@@ -1,0 +1,195 @@
+/* Chronologie formation */
+
+
+.timeline-container {
+    max-width: 800px; 
+    margin: auto; 
+}
+
+.timeline {position: relative;}
+
+.timeline-line {
+    position: absolute;
+    top: 0; 
+    left: 50%; 
+    height: 100%; 
+    border-left: 2px solid #ccc; 
+}
+
+.timeline-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+}
+
+.left-aligned {
+    /* margin-left: 50px; */
+    margin-right: 55%;
+}
+
+.right-aligned {
+    /* margin-left: 450px; */
+    margin-left: 55%;
+}
+
+.extra-label {
+    position: absolute; 
+    top: 0; 
+    /* left: -65px;  */
+    left: -15%; 
+    /* background-color: #f0f0f0;  */
+    background-color: #6690BC; 
+    padding: 5px 10px; 
+    border-radius: 5px;
+    color: #fff;
+}
+
+.main-line-icon {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+
+.story-info-vertical { 
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    border: #ccc solid 1px;
+}
+
+.title-wrap {
+    font-weight: bold; 
+    font-size: 18px; 
+    text-align: start;
+}
+
+.description {margin-top: 10px;}
+
+.description li {color: #083462;}
+
+.timeline-entry {
+    opacity: 1;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+    margin-bottom: 50px; 
+}
+
+.timeline-entry.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.right-year {
+    position: absolute; 
+    top: 0; 
+    /* left: -60px;  */
+    background-color: #6690BC; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    /* right: -70px; */
+    right: -16%;
+    color: #fff;
+}
+
+/* Chronologie expérience pro */
+
+.timeline-item-left {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+  }
+  
+  .timeline-item-right {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+  }
+  
+  .timeline-item-left img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .timeline-item-right img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+
+
+
+@media (max-width: 768px) {
+
+    /* Formation */
+
+    .timeline {margin-top: 15vh;}
+
+    .timeline-entry-inner {
+        margin: 5vw;
+        margin-top: 15vh;
+    }
+
+    .left-aligned {
+        margin-right: 0;
+    }
+
+    .extra-label {
+        left: 44%;
+        margin-top: -7vh;
+    }
+
+    .right-year {
+        right: 44%;
+        margin-top: -7vh;
+    }
+
+    .right-aligned { margin-left: 0;}
+}
+
+
+/* test  1 */
+
+.annee {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+  
+.evenement {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chrono-ligne {position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    border-left: 2px solid #ccc;}
+
+/* test 2*/
+
+.annee {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .evenement1 {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .active {
+    background-color: #f0f0f0;
+  }

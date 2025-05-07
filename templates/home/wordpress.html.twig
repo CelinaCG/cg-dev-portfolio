@@ -1,0 +1,233 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Céline CHEUNG Portfolio - Compétences WordPress {% endblock %}
+
+{% block body %}
+
+
+<div class="container col-xxl-8 px-4 py-5">
+
+  <h1 class="display-5 fw-bold text-body-emphasis lh-sm mb-3">Compétences WordPress</h1>
+
+  <p>Ma formation de développeur à OpenClassrooms s'est déroulé avec l'aide d'un mentor qui m'a supervisé dans chacun des projets fictifs. Voici quelques uns des projets significatifs que j'ai effectué.</p>
+
+  {# Pour chaque compétence, utiliser un des projets comme exemple + screenshots de code si nécéssaire #}
+
+  <h2>Configurer un site WordPress en "no code" avec un thème</h2>
+  <p>J'ai configuré un site vitrine pour une vendeuse de vêtements vintage : Simple Vintage </p>
+  {# <img class="img-fluid mb-5" src="{{ asset("assets/images/Simple-Vintage-header.jpg")}}" alt="Site Simple Vintage"> #}
+  
+  {# carrousel #}
+
+  <div id="carouselIndicators" class="carousel slide caroussel-margin" data-bs-ride="carousel">
+    <ol class="carousel-indicators d-flex">
+      <li data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselIndicators" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselIndicators" data-bs-slide-to="2"></li>
+      <li data-bs-target="#carouselIndicators" data-bs-slide-to="3"></li>
+      <li data-bs-target="#carouselIndicators" data-bs-slide-to="4"></li>
+      <li data-bs-target="#carouselIndicators" data-bs-slide-to="5"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ asset("assets/images/Simple-Vintage-header.jpg")}}" alt="Page accueil Simpl Vintage">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ asset("assets/images/sv1.jpg")}}"  alt="Caroussel Simpl Vintage">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ asset("assets/images/sv2.jpg")}}"  alt="Galerie images Simpl Vintage">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ asset("assets/images/sv3.jpg")}}"  alt="Zoom image Simpl Vintage">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ asset("assets/images/sv4.jpg")}}"  alt="Articles Simpl Vintage">
+      </div>
+            <div class="carousel-item">
+        <img src="{{ asset("assets/images/sv5.jpg")}}"  alt="Carte Simpl Vintage">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-bs-slide="prev">
+      <i class="bi bi-arrow-left-circle-fill blackarrow" aria-hidden="true"></i>
+      <span class="visually-hidden">Précédent</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselIndicators" role="button" data-bs-slide="next">
+      <i class="bi bi-arrow-right-circle-fill blackarrow" aria-hidden="true"></i>
+      <span class="visually-hidden">Suivant</span>
+    </a>
+  </div>
+
+  
+
+  <ul class="work-skill">
+    <li>Installer un environnement de développement WordPress</li>
+    <li>Créer une page web avec le page builder Elementor</li>
+    <li>Configurer un site WordPress grâce à un thème</li>
+
+  </ul>
+
+ 
+  <h2>Introduction à PHP</h2>
+  
+  <p>Une galerie d'art contemporain souhaite améliorer la maintenabilité de son site.</p>
+  {# <img class="img-fluid mb-5" src="{{ asset("assets/images/artbox-header.jpg")}}" alt="Site Artbox"> #}
+  
+   {# Caroussel #}
+  <div id="carouselArtbox" class="carousel slide caroussel-margin" data-bs-ride="carousel">
+    <ol class="carousel-indicators d-flex">
+      <li data-bs-target="#carouselArtbox" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselArtbox" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselArtbox" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ asset("assets/images/artbox-header.jpg")}}" alt="Page accueil Artbox">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ asset("assets/images/artbox3.jpg")}}"  alt="Page de galerie Artbox">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ asset("assets/images/artbox-page.jpg")}}"  alt="Description page Artbox">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselArtbox" role="button" data-bs-slide="prev">
+      <i class="bi bi-arrow-left-circle-fill blackarrow" aria-hidden="true"></i>
+      <span class="visually-hidden">Précédent</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselArtbox" role="button" data-bs-slide="next">
+      <i class="bi bi-arrow-right-circle-fill blackarrow" aria-hidden="true"></i>
+      <span class="visually-hidden">Suivant</span>
+    </a>
+  </div>
+
+  <ul class="work-skill">
+    <li>Retrait du code dupliqué et automatisation de la création des pages</li>
+    <li>Refactorisation d'un site HTML pour améliorer la performance et l'expérience utilisateur</li>
+    <li>Développement de compétences en PHP pour améliorer les fonctionnalités d'un site web</li>
+
+  </ul>
+
+
+  <h2>Personnaliser un thème enfant avec HTML, CSS et PHP</h2>
+  <p>Une societé de boisson energisante souhaite développer son site sur WordPress avec des hooks et des filtres.</p>
+  {# <img class="img-fluid mb-5" src="{{ asset("assets/images/planty2.jpg")}}" alt="Site Planty"> #}
+  
+  {# Caroussel #}
+  <div id="carouselPlanty" class="carousel slide caroussel-margin" data-bs-ride="carousel">
+    <ol class="carousel-indicators d-flex">
+      <li data-bs-target="#carouselPlanty" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselPlanty" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselPlanty" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ asset("assets/images/planty2.jpg")}}" alt="Page accueil Planty">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ asset("assets/images/capture-planty2.jpg")}}"  alt="Parfums des boissons Planty">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ asset("assets/images/capture-planty3.jpg")}}"  alt="Page de commande Planty">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselPlanty" role="button" data-bs-slide="prev">
+      <i class="bi bi-arrow-left-circle-fill blackarrow" aria-hidden="true"></i>
+      <span class="visually-hidden">Précédent</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselPlanty" role="button" data-bs-slide="next">
+      <i class="bi bi-arrow-right-circle-fill blackarrow" aria-hidden="true"></i>
+      <span class="visually-hidden">Suivant</span>
+    </a>
+  </div>
+
+  
+  <ul class="work-skill">
+    <li>Personnaliser un template WordPress conformément à une maquette avec HTML et CSS</li>
+    <li>Personnaliser un thème enfant sur WordPress avec PHP et Elementor</li>
+    <li>Utilisation d'un hook pour ajouter un lien vers le compte admin dans le menu</li>
+    <li>Intégration de formulaires via un plugin</li>
+    <li>Ajout du versioning du code sur Github via des commits</li>
+   
+
+  </ul> 
+
+  <h2>Creation d'un site complexe avec thème personnalisé</h2>
+  <p>Une photographe souhaite créer un site personnalisé et léger grâce aux custom post types ou encore aux champs ACF avec PHP.</p>
+  {# <img class="img-fluid mb-5" src="{{ asset("assets/images/nathalie_mota.jpg")}}" alt="Site photographe"> #}
+
+  {# Caroussel #}
+  <div id="carouselNM" class="carousel slide caroussel-margin" data-bs-ride="carousel">
+    <ol class="carousel-indicators d-flex">
+      <li data-bs-target="#carouselNM" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselNM" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselNM" data-bs-slide-to="2"></li>
+      <li data-bs-target="#carouselNM" data-bs-slide-to="3"></li>
+      <li data-bs-target="#carouselNM" data-bs-slide-to="4"></li>
+      <li data-bs-target="#carouselNM" data-bs-slide-to="5"></li>
+      {# <li data-bs-target="#carouselNM" data-bs-slide-to="6"></li> #}
+      {# <li data-bs-target="#carouselNM" data-bs-slide-to="7"></li> #}
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ asset("assets/images/nm1.jpg")}}" alt="Page accueil Nathalie Mota">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ asset("assets/images/nm2.jpg")}}"  alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ asset("assets/images/nm3.jpg")}}"  alt="">
+      </div>
+           <div class="carousel-item">
+        <img src="{{ asset("assets/images/nm4.jpg")}}"  alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ asset("assets/images/nm5.jpg")}}"  alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ asset("assets/images/nm6.jpg")}}"  alt="">
+      </div>
+      {# <div class="carousel-item">
+        <img src="{{ asset("assets/images/nm7.jpg")}}"  alt="">
+      </div> #}
+      {# <div class="carousel-item">
+        <img src="{{ asset("assets/images/nm8.jpg")}}"  alt="">
+      </div> #}
+    </div>
+    <a class="carousel-control-prev" href="#carouselNM" role="button" data-bs-slide="prev">
+      <i class="bi bi-arrow-left-circle-fill blackarrow" aria-hidden="true"></i>
+      <span class="visually-hidden">Précédent</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselNM" role="button" data-bs-slide="next">
+      <i class="bi bi-arrow-right-circle-fill blackarrow" aria-hidden="true"></i>
+      <span class="visually-hidden">Suivant</span>
+    </a>
+  </div>
+
+  <ul class="work-skill">
+    <li>Mettre en place des structures de données et des champs configurables avec un plugin</li>
+    <li>Rendre des templates de contenu dynamiques en utilisant les données du back-office via Ajax</li>
+    <li>Intégrer du contenu conformément à une maquette avec HTML et CSS</li>
+    <li>Programmer en utilisant les fondamentaux de JavaScript via JQuery</li>
+  </ul>
+
+  <h2>Amélioration d'un site avec des animations CSS sans page builder</h2>
+  <p>Un studio d'animation souhaite l'ajout d'élements animés sur son site : vidéo, carrousel, effets de parallaxe et d'apparition.</p>
+  {# <img class="img-fluid mb-5" src="{{ asset("assets/images/koukaki.jpg")}}" alt="Site Koukaki"> #}
+
+  {# Video #}
+  <video controls width="100%" poster="{{ asset("assets/images/koukaki.jpg")}}" preload="metadata">
+    <source src="{{ asset("assets/videos/koukaki-vid.mp4")}}" type="video/mp4">
+  </video>
+
+  <ul class="work-skill">
+    <li>Initialisation de Swiper.js pour faire un carrousel</li>
+    <li>Utilisation de SASS pour faciliter la mise en place du CSS et éviter des répétitions du code</li>
+    <li>Mettre en œuvre des animations CSS selon la maquette</li>
+    <li>Manipuler des éléments du DOM avec JavaScript</li>
+    <li>Mise en place des animations via des keyframes ou Javascript</li>
+  </ul>
+
+</div>
+
+{% endblock %}

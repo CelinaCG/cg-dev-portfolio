@@ -1,0 +1,387 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Celine CHEUNG Portfolio - Parcours {% endblock %}
+
+{% block body %}
+
+<div class="container col-xxl-8 px-4 py-5">
+
+  <h1 class="display-5 fw-bold text-body-emphasis lh-sm mb-3">Mon parcours</h1>
+    {# Formation #}
+    <section class="timeline-container">
+    <h2>Ma formation</h2>
+    <div class="timeline">
+        <div class="timeline-line"></div>
+        <div class="timeline-fill"></div>
+        {# <article class="timeline-entry left-aligned">
+            <time class="right-year">2005</time>
+            <div class="timeline-entry-inner">
+                {# <div class="main-line-icon">
+                    <i class="bi bi-flag"></i>
+                </div> #}
+                {# <div class="story-info-vertical">
+                    <div class="timeline-content-wrapper">
+                        <div class="content-wrapper">
+                            <p class="title-wrap"><span class="title">BAC littéraire</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article> #}
+        <article class="timeline-entry right-aligned">
+            <time class="extra-label">2019</time>
+            <div class="timeline-entry-inner">
+                {# <div class="main-line-icon">
+                    <i class="bi bi-check2-circle"></i>
+                </div> #}
+                <div class="story-info-vertical">
+                    <div class="timeline-content-wrapper">
+                        <div class="content-wrapper">
+                            <p class="title-wrap"><span class="title">Certification "Mobiliser les compétences numériques fondamentales"</span></p>
+                            <ul class="description">
+                                <li>Formation d'environ 2 mois faite à SIMPLON.CO</li>
+                                <li>Culture numérique : environnement et métiers</li>
+                                <li>Bases de la programmation</li>
+                                <li>Réalisation d'un site internet responsive</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="timeline-entry left-aligned">
+            <time class="right-year">2020</time>
+            <div class="timeline-entry-inner">
+                {# <div class="main-line-icon">
+                    <i class="bi bi-check2-circle"></i>
+                </div> #}
+                <div class="story-info-vertical">
+                    <div class="timeline-content-wrapper">
+                        <div class="content-wrapper">
+                            <p class="title-wrap"><span class="title">Développeur web et mobile</span></p>
+                            <ul class="description">
+                                <li>Formation de 6 mois à Philiance.</li>
+                                <li>HTML, CSS, Bootstrap, Javascript/JQuery</li>
+                                <li>Introduction au droit multimédia</li>
+                                <li>Création d'un site sous Symfony 4</li>
+                                <li>Initiation WordPress</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="timeline-entry right-aligned">
+            <time class="extra-label">2023</time>
+            <div class="timeline-entry-inner">
+                {# <div class="main-line-icon">
+                    <i class="bi bi-geo-alt"></i>
+                </div> #}
+                <div class="story-info-vertical">
+                    <div class="timeline-content-wrapper">
+                        <div class="content-wrapper">
+                            <p class="title-wrap"><span class="title">Développeur WordPress</span></p>
+                            <ul class="description">
+                                <li>Formation de 9 mois à OpenClassrooms</li>
+                                <li>Création de 13 cas pratiques sous forme de projets pour travailler l'HTML, CSS (SASS), Javascript, PHP et WordPress.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+        
+    </section>
+
+  {# Expérience pro #}
+
+    <section class= "container col-xxl-8 px-4 py-5">
+        <div>
+            <h2>Expérience professionelle</h2>
+            <div class="exp-col">
+                {# colonne 1 #}
+                <div class="date-exp">
+                <h6 class="year-company">2020</h6>
+                <div class="arrow-align">
+                    <div class="border-bottom border-dark my-3"></div>
+                    <div><i class="bi bi-arrow-right-circle-fill"></i></div>
+                </div>
+                <p class="company">Cocon de bien-être</p>
+                <img class="img-fluid" src="{{ asset("assets/images/logo-cocon.jpg")}}" alt="Logo Cocon de bien-être">
+                </div>
+            {# colonne 2 #}
+            <div class="two-col">
+                <h4>Développeur WordPress</h4>
+                <p>J'ai aidé à la conception d'un site WordPress pour une gérante d'un salon bien-être lors d'un stage d'un mois. Le site est accessible à l'adresse suivante : <a href="https://www.cocondebienetre.fr/" class="home-url">Cocon de bien-être</a></p>
+                <ul class="work-skill">
+                    <li>Création de menus avec hiérarchisation en drop down</li>
+                    <li>Développement de thèmes personnalisés (police, gamme de couleurs, apparence)</li>
+                    <li>Harmonisation de l'apparence du site avec les images et le thème</li>
+                    <li>Création de questionnaires en ligne</li>
+                    <li>Test et vérification des résultats</li>
+                    <li>Création de modules obligatoires (mentions légales, CGV, gestion des cookies, etc.)</li>
+                    <li>Création de catégories de blog et de tutos d'écriture pour la cliente</li>
+                    <li>Mise en place de cartes interactives pour la localisation d'adresses</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="exp-col">
+            {# colonne 1 #}
+            <div class="date-exp">
+                <h6 class="year-company">2017-2018 (6 mois)</h6>
+                <div class="arrow-align">
+                    <div class="border-bottom border-dark my-3"></div>
+                    <div><i class="bi bi-arrow-right-circle-fill"></i></div>
+                </div>
+                <p class="company">SPIRICA</p>
+                <img class="img-fluid" src="{{ asset("assets/images/logo-spirica.jpg")}}" alt="Logo Spirica">
+            </div>
+            {# colonne 2 #}
+            <div class="two-col">
+                <h4>Gestionnaire de Contrats</h4>
+                <p>Gestion contrats assurance-vie des particuliers</p>
+                <ul class="work-skill">
+                    <li>Gestion de comptes : Souscription de contrat, contrôle de conformité des pièces justificatives et origine des fonds selon la procédure TRACFIN</li>
+                    <li>Mise en place de versements et de rachats : gestion de versements libres ou programmés, arbitrages, rachats partiels et totaux</li>
+                    <li>Gestion de relations avec les partenaires de SPIRICA: contact par courriel, mise à jour des coordonnées bancaires et des clauses bénéficiaires</li>
+                    <li>Gestion de données : modification des adresses, des coordonnées bancaires et des clauses bénéficiaires</li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="exp-col">
+            {# colonne 1 #}
+            <div class="date-exp">
+                <h6 class="year-company">2016 (1 an)</h6>
+                <div class="arrow-align">
+                    <div class="border-bottom border-dark my-3"></div>
+                    <div><i class="bi bi-arrow-right-circle-fill"></i></div>
+                </div>
+                <p class="company">MUTEX</p>
+                <img class="img-fluid" src="{{ asset("assets/images/logo-mutex.jpg")}}" alt="Logo Mutex">
+            </div>
+            {# colonne 2 #}
+            <div class="two-col">
+                <h4>Gestionnaire Production</h4>
+                <p>Gestion des contrats collectifs des entreprises</p>
+                <ul class="work-skill">
+                    {# <li>Souscription et résiliation</li> #}
+                    {# <li>Modifications coordonnées bancaires, modes de paiement, adresses</li> #}
+                    {# <li>Encaissement chèques, vérification et validation bordereaux d'appels de cotisations, suivi des impayés</li> #}
+                    {# <li>Gestion des liquidations judiciaires : courrier aux mandataires judiciaires pour échelonnement des dettes</li> #}
+                    {# <li>Édition de certificats d'appartenance</li> #}
+                    <li>Gestion de comptes : souscription et résiliation de contrats</li>
+                    <li>Gestion de données : mise à jour d'adresses, de coordonnées bancaires et de modes de paiement</li>
+                    <li>Gestion des encaissements : encaissement de chèques, vérification et validation de bordereaux d'appels de cotisations, suivi des impayés</li>
+                    <li>Gestion des contentieux : liquidations judiciaires, échelonnement des dettes, communication avec les mandataires judiciaires</li>
+                    <li>Édition de documents officiels : édition de certificats d'appartenance, garantie de l'exactitude et de la conformité des informations</li>
+                    <li>Respect des procédures et des délais pour garantir la qualité du service</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="exp-col">
+            {# colonne 1 #}
+            <div class="date-exp">
+                <h6 class="year-company">2014-2015 (8 mois)</h6>
+                <div class="arrow-align">
+                    <div class="border-bottom border-dark my-3"></div>
+                    <div><i class="bi bi-arrow-right-circle-fill"></i></div>
+                </div>
+                <p class="company">Humanis</p>
+                <img class="img-fluid" src="{{ asset("assets/images/logo-humanis.png")}}" alt="Logo Humanis">
+            </div>
+            {# colonne 2 #}
+            <div class="two-col">
+                <h4>Gestionnaire Contrats Clients</h4>
+                <p>Gestion des contrats collectifs des salariés Thalès en GEIDE</p>
+                <ul class="work-skill">
+                    <li>Gestion des dossiers: souscription et résiliation des salariés et des bénéficiaires</li>
+                    <li>Gestion administrative: modifications coordonnées bancaires, modes de paiement, adresses, clauses bénéficiaires</li>
+                    <li>Édition de documents officiels: certificats d'appartenance, de radiation et des clauses bénéficiaires</li>
+                    <li>Gestion des relations: relances par courriel ou téléphone pour résoudre les problèmes ou répondre aux questions</li>
+                    <li>Respect des procédures et des délais pour garantir la qualité du service</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="exp-col">
+            {# colonne 1 #}
+            <div class="date-exp">
+                <h6 class="year-company">2014 (9 mois)</h6>
+                <div class="arrow-align">
+                    <div class="border-bottom border-dark my-3"></div>
+                    <div><i class="bi bi-arrow-right-circle-fill"></i></div>
+                </div>
+                <p class="company">Mutuelle Renault</p>
+                <img class="img-fluid" src="{{ asset("assets/images/logo-mutuelle-renault.jpg")}}" alt="Logo Mututelle Renault">
+            </div>
+            {# colonne 2 #}
+            <div class="two-col">
+                <h4>Gestionnaire fichier</h4>
+                <p>Gestion des contrats collectifs et individuels des salariés Renault</p>
+                <ul class="work-skill">
+                    <li>gestion des dossiers: adhésion et démission des salariés</li>
+                    <li>Gestion des bénéficiaires: rattachement et radiation des bénéficiaires</li>
+                    <li>Gestion administrative: modification des informations adhérents (adresses, mode de paiement)</li>
+                    <li>Respect des procédures et des délais pour garantir la qualité du service</li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="exp-col">
+            {# colonne 1 #}
+            <div class="date-exp">
+                <h6 class="year-company">2013 (6 mois)</h6>
+                <div class="arrow-align">
+                    <div class="border-bottom border-dark my-3"></div>
+                    <div><i class="bi bi-arrow-right-circle-fill"></i></div>
+                </div>
+                <p class="company">UNEO</p>
+                <img class="img-fluid" src="{{ asset("assets/images/logo-uneo.jpg")}}" alt="Logo Uneo">
+            </div>
+            {# colonne 2 #}
+            <div class="two-col">
+                <h4>Gestionnaire fichier</h4>
+                <p>Gestion des contrats individuels des militaires</p>
+                <ul class="work-skill">
+                    <li>Gestion des dossiers: souscription des membres participants et radiation des contrôles (Résiliation)</li>
+                    <li>Gestion des bénéficiaires: souscription des bénéficiaires aux contrats des membres participants</li>
+                    {# <li>Radiation des contrôles (Résiliation)</li> #}
+                    <li>Changement de garanties et affiliations</li>
+                    <li>Gestion administrative: modification des informations adhérents (adresses, mode de paiement)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="exp-col">
+            {# colonne 1 #}
+            <div class="date-exp">
+                <h6 class="year-company">2012 (3 mois)</h6>
+                <div class="arrow-align">
+                    <div class="border-bottom border-dark my-3"></div>
+                    <div><i class="bi bi-arrow-right-circle-fill"></i></div>
+                </div>
+                <p class="company">APGIS</p>
+                <img class="img-fluid" src="{{ asset("assets/images/logo-apgis.png")}}" alt="Logo APGIS">
+            </div>
+            {# colonne 2 #}
+            <div class="two-col">
+                <h4>Gestionnaire fichier</h4>
+                <p>Gestion des contrats collectifs des enfants des salariés Carrefour</p>
+                <ul class="work-skill">
+                    <li>Gestion des documents et des dossiers: vérification et validation des certificats de scolarité, garantie de l'exactitude et de la conformité des informations</li>
+                    <li>Gestion administrative: prolongation des droits des enfants sur contrats individuels santé, traitement des demandes, mise à jour des dossiers</li>
+                    <li>Gestion des relations avec les clients: relances pièces justificatives par courrier</li>
+                    <li>Respect des procédures et des délais pour garantir la qualité du service</li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="exp-col">
+            {# colonne 1 #}
+            <div class="date-exp">
+                <h6 class="year-company">2012 (3 mois)</h6>
+                <div class="arrow-align">
+                    <div class="border-bottom border-dark my-3"></div>
+                    <div><i class="bi bi-arrow-right-circle-fill"></i></div>
+                </div>
+                <p class="company">HUMANIS (APRIONIS)</p>
+                  <img class="img-fluid" src="{{ asset("assets/images/logo-humanis.png")}}" alt="Logo Humanis">
+            </div>
+            {# colonne 2 #}
+            <div class="two-col">
+                <h4>Gestionnaire Epargne Collective</h4>
+                <p>Gestion des contrats de retraite supplémentaire</p>
+                <ul class="work-skill">
+                    <li>Gestion administrative: enregistrement et validation des adhésions et cotisations retraite</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="exp-col">
+            {# colonne 1 #}
+            <div class="date-exp">
+                <h6 class="year-company">2011-2012 (1 an et 2 mois)</h6>
+                <div class="arrow-align">
+                    <div class="border-bottom border-dark my-3"></div>
+                    <div><i class="bi bi-arrow-right-circle-fill"></i></div>
+                </div>
+                <p class="company">La Mutuelle Générale</p>
+                <img class="img-fluid" src="{{ asset("assets/images/logo-mutuelle-generale.jpg")}}" alt="Logo Mutuelle générale">
+            </div>
+            {# colonne 2 #}
+            <div class="two-col">
+                <h4>Gestionnaire des contrats</h4>
+                <p>Gestion des contrats individuels - Départment cotisations</p>
+                <ul class="work-skill">
+                    <li>Modifications des coordonnées bancaires: mise à jour des informations de paiement, garantie de la sécurité des transactions</li>
+                    <li>Modification des modes de paiement et adresses:  traitement des demandes de modification, mise à jour des dossiers</li>
+                    <li>Gestion des encaissements: vérification des encaissements, contrôle des paiements, détection des anomalies</li>
+                    <li>Envoi de courriers de confirmation des encaissements  communication avec les clients, garantie de la transparence des transactions</li>
+                </ul>
+                <p>Gestion des contrats individuels - Département pré-contentieux</p>
+                <ul class="work-skill">
+                    <li>Traitement de listings d'adhérents: analyse des données, identification des anomalies</li>
+                    <li>Relances par courrier: communication avec les clients, récupération des informations manquantes</li>
+                    <li>Transmission des dossiers à EFFICO suite à résiliation pour défaut de paiement, traitement des dossiers, garantie de la conformité aux procédures</li>
+                </ul>
+            </div>
+        </div>
+
+        {# test #}
+
+        {# <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+
+        <h2>Dropdowns</h2>
+        <p>The .dropdown class is used to indicate a dropdown menu.</p>
+        <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
+        <p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-toggle="dropdown".</p>                                           #}
+        {# <div class="dropdown">
+            <button id="dropdown-button" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            </ul>
+        </div> #}
+        {# <div class="dropdown">
+            <button id="dropdown-button" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+            </ul>
+            </div>
+
+        #}
+
+
+
+    </section>
+
+
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}

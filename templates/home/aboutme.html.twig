@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Céline CHEUNG Portfolio - Présentation {% endblock %}
+
+{% block body %}
+
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row align-items-center g-5 py-5 article center_image">
+    <div class="col-10 col-sm-8 col-lg-6 text-center">
+      <img class ="img-fluid rounded-circle im-homepage" src="{{ asset("assets/images/pexels-xingyan.jpg")}}" alt="image de poste de travail">
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold text-body-emphasis lh-sm mb-3">Présentation</h1>
+      <h2>Parcours de carrière</h2>
+      <p class="lead"><span>Ma carrière professionnelle est guidée par la curiosité. </span> J'ai débuté comme technicienne de fabrication en maison d'édition, avant de devenir gestionnaire de contrats dans la mutualité. Dans ces rôles, j'ai toujours été en contact étroit avec l'outil informatique, que ce soit dans le cadre professionnel ou personnel.</p>
+      {# <br> #}
+      <p class="lead"><span>Mon intérêt pour le web a émergé naturellement. </span> Ma curiosité m'a poussée à apprendre le codage via des plateformes en ligne comme Khan Academy. Au fil de mon apprentissage, j'ai découvert que coder était non seulement amusant, mais aussi créatif. En tant qu'internaute active, j'ai pris conscience de l'importance cruciale des sites internet pour la communication et le partage d'informations.
+    </div>
+    {# <br> #}
+    <div>
+      <p class="lead"><span>Cette réalisation m'a orientée vers la conception de sites web.</span> J'ai suivi plusieurs formations en développement web, notamment avec des frameworks comme Symfony et WordPress. Ces formations m'ont dotée des compétences nécessaires pour maîtriser la diversité des outils de développement. Je suis capable de comprendre et de m'adapter aux besoins des clients, de concevoir des projets web de qualité, et de rester curieuse face aux nouveaux défis et innovations du monde du web.</p>
+      {# <br> #}
+        <p class="lead"><span>Je suis également engagée dans la veille technologique. </span> Je m'efforce de rester informée des dernières tendances et avancées dans le domaine du développement informatique, ce qui me permet d'offrir des solutions toujours plus innovantes et performantes.</p>
+      
+      <h2>Compétences Clés</h2>
+      <ul class="lead list-bold">
+        <li><strong>Programmation:</strong> HTML, JavaScript, PHP, CSS </li>
+        <li><strong>Frameworks:</strong> Symfony 4.4 et 6, Bootstrap</li>
+        <li><strong>CMS:</strong> WordPress (personnalisation complète, utilisation de plugins)</li>
+        <li><strong>Bases de données:</strong> MySQL</li>
+        <li><strong>Outils de versionnement:</strong> Git</li>
+        <li><strong>Outils de conception:</strong> Figma (consultation occasionnelle)</li>
+        <li><strong>Soft Skills: </strong> Adaptabilité, résolution de problèmes, travail d'équipe, communication</li>
+      </ul>
+      
+      <p class="lead">Pour une liste détaillée de mes compétences, veuillez consulter la section consacrée à <a class="style-link" href="#competences">Symfony</a> ou <a class="style-link" href="#competences">WordPress</a>.</p>
+      {# <br> #}
+      <h2>Intérêts et loisirs</h2>
+
+      <p class="lead"><span>En dehors du travail, j'ai une passion pour la lecture. </span> Je m'intéresse particulièrement à la science-fiction et à la littérature asiatique. J'apprécie également la musique, avec des goûts très variés, allant du pop/rock à l'électro, en passant par le disco, le jazz, la musique classique et ethnique.</p>
+      {# <br> #}
+      <p class="lead"><span>Mes loisirs sont aussi tournés vers le digital. </span> Je joue régulièrement à des jeux vidéo, tant sur console que sur mobile. J'ai également été modératrice dans un groupe Facebook dédié à un jeu vidéo mobile japonais, où j'ai acquis une expérience précieuse en matière de gestion d'une communauté en ligne, en veillant à la fois à la sécurité et à l'attractivité de l'espace de communication. </p>
+      {# <br> #}
+
+      <h2>Objectifs futurs</h2>
+      <p class="lead"><span>Mon objectif futur est de devenir développeuse senior. </span> Je souhaite mettre mes compétences et mon expérience au service de mes collègues et de mes clients, en contribuant à la réalisation de projets web de haut niveau. Je suis déterminée à continuer d'apprendre et à évoluer dans mon domaine, tout en restant à l'écoute des besoins et des attentes de mes interlocuteurs.
+      </p> 
+
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start margin-button">
+        {# <button type="button" class="btn button-show margin-button btn-lg px-4 me-md-2">Voir mes compétences</button> #}
+        <button type="button" class="btn button-show margin-button btn-lg px-4">Me contacter</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

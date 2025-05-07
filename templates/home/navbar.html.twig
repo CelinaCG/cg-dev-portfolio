@@ -1,0 +1,46 @@
+<header>
+
+<nav class="navbar navbar-expand-lg color-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ path("home")}}">
+      <img src="/assets/images/mouse.png" alt="Accueil">
+      <a class="homelink" href="{{ path("home")}}">Céline CHEUNG</a>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="{{ path("home")}}">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ path("aboutme")}}">Présentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ path("career")}}">Parcours</a>
+        </li>
+        {# Dropdown menu  #}
+        <div class="dropdown dd-link">
+          <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Compétences
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{ path("wordpress")}}">WordPress</a></li>
+            <li><a class="dropdown-item" href="#">Symfony</a></li>
+          </ul>
+        </div>
+        {# fin dropdown #}
+        {# <li class="nav-item">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li> #}
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+</header>
